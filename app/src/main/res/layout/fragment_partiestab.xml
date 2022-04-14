@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".home.dashboardTab.partiesTab.PartiesTabFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginEnd="@dimen/margin8"
+        android:layout_marginBottom="@dimen/margin4"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/addNewPartybt"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/lightblue"
+            android:enabled="false"
+            android:text="@string/new_party"
+            android:textAllCaps="false"
+            android:textColor="@color/blue"
+            app:cornerRadius="@dimen/margin24"
+            app:icon="@drawable/ic_add"
+            app:iconTint="@color/blue" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginEnd="@dimen/margin4"
+        android:layout_marginBottom="@dimen/margin4"
+        android:background="@color/dividerColor"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/partiesRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

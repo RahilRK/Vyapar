@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".itemDetail.ItemDetailFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appBarColor">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            app:navigationIcon="@drawable/ic_arrow_back">
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="@dimen/margin4">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin16"
+            >
+
+            <TextView
+                android:id="@+id/itemName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="@dimen/margin12"
+                android:singleLine="true"
+                android:text="@string/item_name"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp18" />
+
+            <LinearLayout
+                android:id="@+id/salesPriceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@id/itemName"
+                android:layout_marginEnd="@dimen/margin32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/sales_price"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorHigh"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/salesPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:singleLine="true"
+                    android:text="@string/demo_amount"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/purchasePriceLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/salesPriceLayout"
+                android:layout_below="@id/itemName"
+                android:layout_marginEnd="@dimen/margin32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/purchase_price"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorHigh"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/purchasePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:singleLine="true"
+                    android:text="@string/demo_amount"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/inStockLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/purchasePriceLayout"
+                android:layout_below="@id/itemName"
+                android:layout_marginEnd="@dimen/margin32"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/in_stock"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorHigh"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/inStock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:singleLine="true"
+                    android:text="@string/demo_number"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/successColor"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stockValueLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/salesPriceLayout"
+                android:layout_marginTop="@dimen/margin12"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/stock_value"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/textColorHigh"
+                    android:textSize="@dimen/sp16" />
+
+                <TextView
+                    android:id="@+id/stockValue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin4"
+                    android:singleLine="true"
+                    android:text="@string/demo_amount"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/sp16" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/stock_transactions"
+        android:textAlignment="textStart"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/sp18"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin8"
+        android:layout_marginTop="@dimen/margin12"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/transactions"
+            android:textAlignment="textStart"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin12"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/quantity"
+            android:textAlignment="center"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin12"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/total_amount"
+            android:textAlignment="textEnd"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            android:layout_marginStart="@dimen/margin8"
+            android:layout_marginTop="@dimen/margin12"
+            android:layout_marginBottom="@dimen/margin12"
+            />
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="@dimen/margin4">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

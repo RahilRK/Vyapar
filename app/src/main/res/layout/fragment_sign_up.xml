@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SignUpFragment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_margin="@dimen/margin16"
+        android:layout_above="@id/agreeTermtv"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp24"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/get_control_of_your_business_with_vyapar"
+            android:textColor="@color/textColorHigh"
+            android:textSize="@dimen/sp16"
+            />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobileNumberlo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_mobile_number"
+            app:helperTextEnabled="true"
+            app:prefixText="+91"
+            app:endIconMode="clear_text"
+            android:layout_marginTop="@dimen/margin24"
+            android:layout_marginBottom="@dimen/margin8"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mobileNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="10"
+                android:text=""
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/getotpbt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin16"
+            android:layout_marginTop="@dimen/margin16"
+            android:textAllCaps="false"
+            app:cornerRadius="@dimen/margin24"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:enabled="false"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:text="@string/get_otp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/agreeTermtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/margin16"
+        android:text="@string/by_continuing_i_agree_the_terms_and_conditions"
+        android:textColor="@color/textColorHigh"
+        android:textSize="@dimen/sp14"
+        />
+
+</RelativeLayout>

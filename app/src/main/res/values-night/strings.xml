@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Vyapar</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="verify_otp">Verify OTP</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="get_control_of_your_business_with_vyapar">Get control of your business with Vyapar</string>
+    <string name="enter_mobile_number">Enter Mobile Number</string>
+    <string name="get_otp">Get OTP</string>
+    <string name="by_continuing_i_agree_the_terms_and_conditions">By continuing, I agree the Terms and Conditions</string>
+    <string name="verifying_otp">Verifying OTP</string>
+    <string name="dash"> - </string>
+    <string name="enter_otp_code">Enter OTP Code</string>
+    <string name="resend_code_in_29_sec">Resend code in 29 sec</string>
+    <string name="submit">Submit</string>
+    <string name="grow_business">Grow Business</string>
+    <string name="changeMobileNumber"><![CDATA[OTP send to <b><font color=#90CAF9> %1$s </font></b> ]]></string>
+    <string name="dashboard">Dashboard</string>
+    <string name="items">Items</string>
+    <string name="expense">Expense</string>
+    <string name="sales">Sales</string>
+    <string name="payment_in">Payment-In</string>
+    <string name="sales_return">Sales Return</string>
+    <string name="purchase">Purchase</string>
+    <string name="payment_out">Payment-Out</string>
+    <string name="purchase_return">Purchase Return</string>
+    <string name="remainder">Remainder</string>
+    <string name="sync">Sync</string>
+    <string name="contact_us">Contact us</string>
+    <string name="rate_this_app">Rate this app</string>
+    <string name="more">More</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="change_company">Change Company</string>
+    <string name="manage_companies">Manage Companies</string>
+    <string name="add_party">Add Party</string>
+    <string name="logout">Logout</string>
+    <string name="about_us">About Us</string>
+    <string name="privacy_policy">Privacy policy</string>
+    <string name="termsandconditions"><![CDATA[Terms & Conditions]]></string>
+    <string name="parties">Parties</string>
+    <string name="transactions">Transactions</string>
+    <string name="title">Title</string>
+    <string name="amount">Amount</string>
+    <string name="enter_amount"><![CDATA[\u20B9 %1$s ]]></string>
+    <string name="demo_amount">\u20B9 5000.00</string>
+    <string name="party_name">Party Name</string>
+    <string name="date">Date</string>
+    <string name="youwillget">You\'ll Get</string>
+    <string name="youwillgive">You\'ll Give</string>
+    <string name="new_party">New Party</string>
+    <string name="search">Search</string>
+    <string name="search_party">Search Party</string>
+    <string name="total">Total</string>
+    <string name="balance">Balance</string>
+    <string name="add_sales">Add Sales</string>
+    <string name="sales_price">Sales Price</string>
+    <string name="purchase_price">Purchase Price</string>
+    <string name="in_stock">In Stock</string>
+    <string name="item_name">Item name</string>
+    <string name="item_name_with_star">Item name<font color='#FF0000'>*</font></string>
+    <string name="new_item">New Item</string>
+    <string name="search_transactions">Search Transactions</string>
+    <string name="add_item">Add Item</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="unit">Unit</string>
+    <string name="select_unit">Select Unit<font color='#FF0000'>*</font></string>
+    <string name="item_code_barcode">Item Code/Barcode</string>
+    <string name="sales_price_with_star">Sales Price<font color='#FF0000'>*</font></string>
+    <string name="purchase_price_with_star">Purchase Price<font color='#FF0000'>*</font></string>
+    <string name="item_description">Item Description</string>
+    <string name="minimum_stock">Minimum Stock</string>
+    <string name="add_image">Add Image</string>
+    <string name="tap_here_to_pick_image">Tap here to pick image</string>
+    <string name="item_detail">Item Detail</string>
+    <string name="stock_value">Stock Value</string>
+    <string name="stock_transactions">Stock Transactions</string>
+    <string name="quantity">Quantity</string>
+
+</resources>

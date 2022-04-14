@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFEF9A9A</color>
+    <color name="purple_500">#ed1a3b</color>
+    <color name="purple_700">#ed1a3b</color>
+    <color name="teal_200">#ffc312</color>
+    <color name="teal_700">#f79f1f</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+
+<!--    <color name="primaryColor">#ed1a3b</color>-->
+<!--    <color name="secondaryColor">#f79f1f</color>-->
+<!--    <color name="secondaryColor_2">#ffc312</color>-->
+
+    <color name="appColorLight">#60ed1a3b</color>
+    <color name="textColorOpposite">#ffffff</color>
+    <color name="textColor">#000000</color>
+    <color name="textColorHigh">#87000000</color>
+    <color name="textColorLow">#60000000</color>
+    <color name="textColorWithBGDrawable">#ffffff</color>
+    <color name="iconColor">#000000</color>
+    <color name="appBarColor">#ffffff</color>
+    <color name="warningColor">#ee6002</color>
+    <color name="successColor">#339900</color>
+    <color name="roundcurveGreenColor">#A5D6A7</color>
+    <color name="roundcurveRedColor">#80ee6002</color>
+    <color name="toolBarColor">#ffffff</color>
+    <color name="dividerColor">#10373737</color>
+    <color name="errorColor">#B00020</color>
+    <color name="blue">#3E82F7</color>
+    <color name="lightblue">#203E82F7</color>
+    <color name="orange">#FF5722</color>
+    <color name="yellow">#ffe500</color>
+    <color name="purple">#9C27B0</color>
+    <color name="pink">#f64c73</color>
+    <color name="gray">#808080</color>
+
+</resources>

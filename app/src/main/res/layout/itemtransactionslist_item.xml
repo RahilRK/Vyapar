@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/margin8"
+    android:paddingEnd="@dimen/margin8"
+    android:id="@+id/itemListParentLayout"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:layout_margin="@dimen/margin8"
+        >
+
+        <LinearLayout
+            android:id="@+id/transactionTypeLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/margin32"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/transactionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:text="@string/purchase"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/sp16"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/transactionDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin4"
+                android:singleLine="true"
+                android:text="@string/date"
+                android:textAlignment="textStart"
+                android:textAllCaps="true"
+                android:textColor="@color/textColorHigh"
+                android:textSize="@dimen/sp16" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/demo_number"
+            android:textAlignment="center"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/totalAmount"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/demo_amount"
+            android:textAlignment="textEnd"
+            android:gravity="center_vertical"
+            android:textAllCaps="true"
+            android:textColor="@color/textColor"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin1"
+        android:layout_marginTop="@dimen/margin8"
+        android:layout_marginBottom="@dimen/margin4"
+        android:background="@color/dividerColor"
+        />
+
+</LinearLayout>

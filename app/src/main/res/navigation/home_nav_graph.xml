@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_nav_graph"
+    android:label="@string/dashboard"
+    app:startDestination="@id/dashboardFragment">
+
+    <fragment
+        android:id="@+id/dashboardFragment"
+        android:name="com.rahilkarim.vyapar.home.dashboard.DashboardFragment"
+        android:label="@string/dashboard"
+        tools:layout="@layout/fragment_dashboard" >
+        <action
+            android:id="@+id/action_dashboardFragment_to_addItemFragment"
+            app:destination="@id/addItemFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_itemDetailFragment"
+            app:destination="@id/itemDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemsFragment"
+        android:name="com.rahilkarim.vyapar.home.ItemsFragment"
+        android:label="@string/items"
+        tools:layout="@layout/fragment_items" />
+    <fragment
+        android:id="@+id/partyFragment"
+        android:name="com.rahilkarim.vyapar.home.PartyFragment"
+        android:label="@string/party"
+        tools:layout="@layout/fragment_party" />
+    <fragment
+        android:id="@+id/addItemFragment"
+        android:name="com.rahilkarim.vyapar.addItem.AddItemFragment"
+        android:label="@string/add_item"
+        tools:layout="@layout/fragment_add_item" >
+        <action
+            android:id="@+id/action_addItemFragment_to_addImageFragment"
+            app:destination="@id/addImageFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addImageFragment"
+        android:name="com.rahilkarim.vyapar.addImage.AddImageFragment"
+        android:label="@string/add_image"
+        tools:layout="@layout/fragment_add_image" />
+    <fragment
+        android:id="@+id/itemDetailFragment"
+        android:name="com.rahilkarim.vyapar.itemDetail.ItemDetailFragment"
+        android:label="@string/item_detail"
+        tools:layout="@layout/fragment_item_detail" >
+        <argument
+            android:name="itemModelArgs"
+            app:argType="com.rahilkarim.vyapar.home.dashboardTab.itemsTab.itemModel" />
+    </fragment>
+</navigation>

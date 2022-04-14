@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/dashboardFragment"
+            android:icon="@drawable/ic_dashboard"
+            android:title="@string/dashboard" />
+        <item
+            android:id="@+id/itemsFragment"
+            android:icon="@drawable/ic_items"
+            android:title="@string/items" />
+<!--        <item-->
+<!--            android:id="@+id/partyFragment"-->
+<!--            android:icon="@drawable/ic_party"-->
+<!--            android:title="@string/party" />-->
+        <item
+            android:icon="@drawable/ic_sync"
+            android:title="@string/sync" />
+    </group>
+
+    <group
+        android:id="@+id/sales_group"
+        android:visible="true"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/sales">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_sales"
+                    android:title="@string/sales" />
+
+                <item
+                    android:icon="@drawable/ic_paymentin"
+                    android:title="@string/payment_in" />
+
+                <item
+                    android:icon="@drawable/ic_sales_return"
+                    android:title="@string/sales_return" />
+            </menu>
+        </item>
+    </group>
+
+    <group
+        android:id="@+id/purchase_group"
+        android:visible="true"
+        android:checkableBehavior="single">
+        <item
+            android:title="@string/purchase">
+            <menu>
+                <item
+                    android:icon="@drawable/ic_purchase"
+                    android:title="@string/purchase" />
+
+                <item
+                    android:icon="@drawable/ic_paymentout"
+                    android:title="@string/payment_out" />
+
+                <item
+                    android:icon="@drawable/ic_purchase_return"
+                    android:title="@string/purchase_return" />
+            </menu>
+        </item>
+    </group>
+
+    <group android:checkableBehavior="single">
+    <item
+        android:title="@string/more">
+        <menu>
+            <item
+                android:icon="@drawable/ic_contact"
+                android:title="@string/contact_us" />
+            <item
+                android:icon="@drawable/ic_rating"
+                android:title="@string/rate_this_app" />
+            <item
+                android:icon="@drawable/ic_logout"
+                android:title="@string/logout" />
+        </menu>
+
+    </item>
+    </group>
+
+</menu>

@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/margin124"
+    android:layout_height="@dimen/margin124"
+    android:layout_marginTop="@dimen/margin4"
+    >
+
+    <RelativeLayout
+        android:id="@+id/pickMoreImageLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/margin8"
+        android:background="@drawable/gray_border_bg">
+
+        <ImageView
+            app:tint="@color/gray"
+            android:layout_width="@dimen/margin64"
+            android:layout_height="@dimen/margin64"
+            android:layout_centerInParent="true"
+            android:padding="@dimen/margin16"
+            android:src="@drawable/ic_addimages" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
